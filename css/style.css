@@ -2,7 +2,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), ur(../fonts/Montserrat-Regular.ttf) format('truetype');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) forma('truetype');
 }
 
 @font-face {
@@ -150,4 +150,78 @@ footer section.copyright {
 
 footer section.copyright i.fa-heart {
   color: #f00;
+}
+
+h1 a{
+  /* text-decoration: none; */
+  color: #333;
+}
+:root {
+    --cor-fundo: #3584A1;
+    --cor-hover: rgb(35, 85, 104);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: #3584A1;
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+.whatsapp-link {
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		bottom: 40px;
+		right: 40px;
+		background-color: #25d366;
+		color: #fff;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 30px;
+		box-shadow: 1px 1px 2px #888;
+		z-index: 1000;
+}
+ 
+	.fa-whatsapp {
+		margin-top: 16px;
 }
